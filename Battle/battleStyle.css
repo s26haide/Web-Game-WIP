@@ -1,0 +1,367 @@
+html
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+body
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+#sky
+{
+  margin: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #87cefa;
+  position: absolute;
+}
+
+#ground
+{
+  margin: 0;
+  width: 100%;
+  height:50vh;
+  top: 50vh;
+  background-color: green;
+  position: absolute;
+}
+
+#head
+{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 45%;
+  top: 45vh;
+  background-color: #ffad60;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+#body
+{
+  position: absolute;
+  width: 45px;
+  height: 55px;
+  left: 44.6%;
+  top: 50vh;
+  background-color: red;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+#hips
+{
+  position: absolute;
+  width: 45px;
+  height: 15px;
+  left: 44.6%;
+  top: 58.5vh;
+  background-color: blue;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#leftLeg
+{
+  position: absolute;
+  width: 15px;
+  height: 55px;
+  left: 44.6%;
+  top: 60vh;
+  background-color: blue;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#rightLeg
+{
+  position: absolute;
+  width: 15px;
+  height: 55px;
+  left: 46.95%;
+  top: 60vh;
+  background-color: blue;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#rightShoulder
+{
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  left: 47.8%;
+  top: 50vh;
+  background-color: red;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#leftShoulder
+{
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  left: 43.4%;
+  top: 50vh;
+  background-color: red;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#leftArm
+{
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  left: 43.4%;
+  top: 52.3vh;
+  background-color: #ffad60;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+#rightArm
+{
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  left: 48.5%;
+  top: 52.4vh;
+  background-color: #ffad60;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+#cPart1, #cPart2, #cPart3
+{
+  background-color: white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 0vh;
+  z-index: 10;
+  animation: cloudMove 10s linear normal infinite;
+}
+
+#cPart1
+{
+  left: 0%;
+}
+#cPart2
+{
+  left: 2.5%;
+}
+#cPart3
+{
+  left: 5%;
+}
+
+#cPart4, #cPart5, #cPart6
+{
+  background-color: white;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+  top: 10vh;
+  visibility: hidden;
+  animation: cloudMove 10s 2s linear normal infinite;
+}
+
+#cPart4
+{
+  left:0%;
+}
+#cPart5
+{
+  left: 2%;
+}
+#cPart6
+{
+  left: 4%;
+}
+
+#cPart7, #cPart8, #cPart9
+{
+  background-color: white;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+  top: 30vh;
+  visibility: hidden;
+  animation: cloudMove 10s 4s linear normal infinite;
+}
+
+#cPart7
+{
+  left:0%;
+}
+#cPart8
+{
+  left: 2%;
+}
+#cPart9
+{
+  left: 4%;
+}
+
+#cPart10, #cPart11, #cPart12
+{
+  background-color: white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  top: 20vh;
+  visibility: hidden;
+  animation: cloudMove 10s 6s linear normal infinite;
+}
+
+#cPart10
+{
+  left:0%;
+}
+#cPart11
+{
+  left: 2.5%;
+}
+#cPart12
+{
+  left: 5%;
+}
+
+#music
+{
+  visibility: hidden;
+  margin: 0;
+  background-color: #87cefa;
+  display: block;
+}
+
+#muteBut
+{
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 91%;
+  left: 93.5%;
+  border: 2px solid red;
+}
+
+#leftBut
+{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 85%;
+  left: 1%;
+  border: 2px solid red;
+}
+
+#rightBut
+{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 85%;
+  left: 9%;
+  border: 2px solid red;
+}
+
+#upBut
+{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 80%;
+  left: 5%;
+  border: 2px solid red;
+}
+
+#downBut
+{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 90%;
+  left: 5%;
+  border: 2px solid red;
+}
+
+#centerBut
+{
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  top: 85%;
+  left: 5%;
+  border: 2px solid red;
+}
+
+#enemy1
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  z-index: 10;
+  top: 65%;
+  left: 90%;
+  border: 2px solid red;
+}
+
+@keyframes cloudMove
+{
+  from{transform: translatex(-10vw); visibility: visible;}
+  to {transform: translateX(100vw)}
+}
+
+
+@keyframes moveUp
+{
+  from {transform: translateY();}
+    to {transform: translateY(-10px)}
+}
+
+@keyframes moveDown
+{
+  from {transform: translateY();}
+    to {transform: translateY(10px)}
+}
+
+@keyframes moveLeft
+{
+  from {transform: translateX();}
+    to {transform: translateX(-10px)}
+}
+
+@keyframes moveRight
+{
+  from {transform: translateX(10px);}
+    to {transform: translateX(100px)}
+}
